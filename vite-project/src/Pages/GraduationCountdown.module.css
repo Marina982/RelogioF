@@ -1,0 +1,48 @@
+/* GraduationCountdown.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* Centraliza verticalmente */
+  align-items: center;       /* Centraliza horizontalmente */
+  height: 100vh;             /* Ocupa toda a altura da tela */
+  text-align: center;
+  padding: 160px 20px 40px;  /* Espaço para o header fixo */
+  box-sizing: border-box;
+  background-color: aliceblue;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.name {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+}
+
+.class {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.timer {
+  font-size: 2em;
+  color: #4B0082;
+}
+
+.finished {
+  font-size: 1.8em;
+  color: #228B22;
+}
+
+body{
+  background-color: aliceblue;
+  height: 100%;
+  width: 100%;
+}
+

@@ -1,0 +1,27 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4B0082;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 5px solid #9370DB;
+
+}
+
+.title {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.date {
+  font-size: 1em;
+  font-style: italic;
+}
