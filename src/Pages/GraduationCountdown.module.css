@@ -2,11 +2,11 @@
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;   /* Centraliza verticalmente */
-  align-items: center;       /* Centraliza horizontalmente */
-  height: 100vh;             /* Ocupa toda a altura da tela */
+  justify-content: center;   
+  align-items: center;       
+  height: 100vh;             
   text-align: center;
-  padding: 160px 20px 40px;  /* Espaço para o header fixo */
+  padding: 160px 20px 40px;  
   box-sizing: border-box;
   background-color: aliceblue;
   font-family: Arial, sans-serif;
