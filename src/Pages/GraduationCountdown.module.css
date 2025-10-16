@@ -1,48 +1,117 @@
-/* GraduationCountdown.module.css */
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;   
-  align-items: center;       
-  height: 100vh;             
-  text-align: center;
-  padding: 160px 20px 40px;  
-  box-sizing: border-box;
-  background-color: aliceblue;
-  font-family: Arial, sans-serif;
-}
 
-.title {
-  font-size: 2em;
-  margin-bottom: 10px;
-  color: black;
-}
-
-.name {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: black;
-}
-
-.class {
-  font-size: 1.2em;
-  margin-bottom: 20px;
-  color: black;
-}
-
-.timer {
-  font-size: 2em;
-  color: #4B0082;
-}
-
-.finished {
-  font-size: 1.8em;
-  color: #228B22;
-}
-
-body{
-  background-color: aliceblue;
+html,
+body {
   height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+  background: #d8d8df;
 }
 
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100vw; 
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background: linear-gradient(135deg, #cfcfdb, #efeff0);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Título */
+.title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #9454b3;
+  margin-bottom: 1.2rem;
+  text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+
+.name {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: #965fd4;
+  letter-spacing: 0.5px;
+}
+
+
+.class {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  color: #a665c4;
+}
+
+
+.timer {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #440daa;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 20px rgba(97, 44, 158, 0.3);
+  animation: pulse 1.5s infinite alternate;
+}
+
+
+.finished {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #32cd32;
+  text-shadow: 0 0 15px rgba(50, 205, 50, 0.6);
+  animation: celebration 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    box-shadow: 0 0 15px rgba(60, 33, 177, 0.4);
+  }
+  to {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(70, 61, 189, 0.6);
+  }
+}
+
+@keyframes celebration {
+  from {
+    color: #32cd32;
+    text-shadow: 0 0 10px rgba(50, 205, 50, 0.6);
+  }
+  to {
+    color: #00ff99;
+    text-shadow: 0 0 20px rgba(0, 255, 153, 0.8);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .name {
+    font-size: 1.3rem;
+  }
+
+  .timer {
+    font-size: 1.6rem;
+    padding: 0.8rem 1.8rem;
+  }
+}
