@@ -43,13 +43,25 @@ const GraduationCountdown = () => {
       <div className={styles.container}>
         <h1 className={styles.title}>Contagem Regressiva para a Formatura 🎓</h1>
         <h2 className={styles.name}>Marina Raquel Oliveira Maciel Oliveira Maciel Goes</h2>
-        <h3 className={styles.class}>Turma: Informática 6A</h3>
+        <h3 className={styles.class}>Turma: Informática 6A <br/> Depois da formatura 
+        pretendo buscar um emprego na area.🤠 </h3>
+       
+
         {timeLeft.finished ? (
-          <h2 className={styles.finished}>🎉 Parabéns pela formatura! 🎉</h2>
+          <>
+            <h2 className={styles.finished}>🎉 Parabéns, chegou o grande dia da nossa formatura! 🎉</h2>
+          </>
         ) : (
-          <div className={styles.timer}>
-            {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s
-          </div>
+          <>
+            <div className={styles.timer}>
+              {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s
+            </div>
+            <img
+              src="/images/transferir.jpeg"
+              alt="Chapéu de formatura"
+              className={styles.image}
+            />
+          </>
         )}
       </div>
     </div>
